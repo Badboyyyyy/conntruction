@@ -87,6 +87,7 @@ color:#fff;
 	display: flex;
 	margin:20px 0;
 	flex-wrap: wrap;
+	width:100%;
 }
 .contentBox{
 	display: flex;
@@ -102,22 +103,8 @@ color:#fff;
 .contentBox .imgBox img{
 	width:100%;
 }
-.imgBox .leftImg, .imgBox .rightImg{
-	display: flex;
-	width:50%;
-	margin:0px;
-	position: relative;
-	height: 15rem;
-}
-.imgBox .leftImg p, .imgBox .rightImg p{
-	position: absolute;
-	background-color:rgba(0,0,0,0.5);
-	padding:5px 5px 5px 10px;
-	color:#fff;
-}
-.imgBox .leftImg img, .imgBox .rightImg img{
-	width:100%;
-}
+
+
 .description{
 	display: flex;
 	flex-direction: column;
@@ -285,6 +272,40 @@ footer  .box{
 nav .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+.main .productDescription{
+display: flex;
+flex-direction: column;
+}
+.main .productDescription .contentDescription {
+display: flex;
+flex-direction: column;
+}
+
+.main .productDescription .contentDescription .contentfly{
+display: flex;
+flex-wrap: wrap;
+
+}
+.main .productDescription .contentDescription .contentfly .box{
+	display: flex;
+width:calc(100% / 2 - 20px);
+margin:auto;
+}
+.main .productDescription .contentDescription .contentflyLeft{
+	display: flex;
+	width:100%;
+	overflow: hidden;
+	flex-direction: column;
+
+}
+.main .productDescription .contentDescription .contentflyRight{
+display: flex;
+	width:100%;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+
 @media only screen and (max-width: 768px){
 	#home{
 		margin-top:57px;
@@ -321,5 +342,30 @@ nav .navbar-toggler-icon {
 	flex-direction: column;
 	width:100%;
 	justify-content: center;
+}
+.product .contentBox{
+	width:100%;
+	overflow: hidden;
+}
+#services .main .product .contentBox{
+	width:100vw;
+	overflow: hidden;
+}
+.contentDes  .box, .contentfly .box{
+	display: flex;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.main .productDescription .contentDescription .contentfly{
+display: flex;
+flex-wrap: wrap;
+
+}
+.main .productDescription .contentDescription .contentfly .box{
+	display: flex;
+	flex-wrap: wrap;
+width:100%;
+margin:20px 0;
 }
 }
