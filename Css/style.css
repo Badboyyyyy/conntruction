@@ -185,7 +185,7 @@ color:#fff;
 .item .descriptinoBox p{
 	text-align: center;
 }
-#contact .main{
+#cont .main{
 	flex-direction: row;
 }
 .contactBox{
@@ -289,18 +289,18 @@ footer  .box{
     margin: auto;
     border: 1px solid #10106d;
 }
-.aboutContent , #contact .main{
+.aboutContent , #cont .main{
 	  display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
    
 }
-#contact .contactleft{
+#cont .contactleft{
 	height:60vh;
 }
 
-.aboutContent .box, #contact .contactBox{
+.aboutContent .box, #cont .contactBox{
 	margin:0;
 	width:100%;
 }
