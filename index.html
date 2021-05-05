@@ -24,7 +24,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav ml-auto" id="navmenu">
       <li class="nav-item">
         <a class="nav-link" href="#home">Home</a>
       </li>
@@ -518,6 +518,19 @@ Post Barethiya Distt. Satna-485441
     duration:1000,
   });
   });
+    var btnContainer = document.getElementById("navmenu");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("nav-item");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
 	</script>
 </body>
 </html>
