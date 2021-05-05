@@ -29,7 +29,7 @@ color:#fff;
 	color:#fff;
 	border:1px solid #000;
 }
-.btn:hover, .btn:focus{
+.btn:hover, .btn:focus, .btn:active{
 	background-color:#FF8C00;
  color:#FFF;
  font-weight: 600;
