@@ -318,7 +318,9 @@ display: flex;
 	align-items: center;
 	justify-content: center;
 }
-
+.mobile{
+	display: none;
+}
 @media only screen and (max-width: 768px){
 	#home{
 		margin-top:57px;
@@ -386,5 +388,11 @@ margin:20px 0;
 	flex-wrap: wrap;
 width:100%;
 margin:20px 0;
+}
+.laptop{
+	display: none;
+}
+.mobile{
+	display: block;
 }
 }
