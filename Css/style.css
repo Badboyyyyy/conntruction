@@ -286,6 +286,19 @@ display: flex;
 flex-wrap: wrap;
 
 }
+.aboutContent{
+	display: flex;
+flex-wrap: wrap;
+}
+.aboutContent .dirImage{
+	display: flex;
+	justify-content: center;
+}
+.aboutContent .box{
+	display: flex;
+width:calc(100% / 2 - 20px);
+margin:auto;
+}
 .main .productDescription .contentDescription .contentfly .box{
 	display: flex;
 width:calc(100% / 2 - 20px);
@@ -363,6 +376,12 @@ flex-wrap: wrap;
 
 }
 .main .productDescription .contentDescription .contentfly .box{
+	display: flex;
+	flex-wrap: wrap;
+width:100%;
+margin:20px 0;
+}
+.aboutContent .box{
 	display: flex;
 	flex-wrap: wrap;
 width:100%;
