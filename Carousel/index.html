@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carousel</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <style>
+  	.swiper-container{
+  		width:100%;
+  		background-color:rgba(128, 140, 104,1);
+  	}
+  	.swiper-wrapper{
+  		height: 90vh;
+  		width:100%;
+  		
+
+  	}
+  	  	.swiper-container .swiper-slide{
+  	  		margin-top:5%;
+  	  		margin-bottom:5%;
+        background-size: cover;
+        background-repeat: no-repeat;
+  		display: flex;
+  		justify-content: center;
+  		align-items: center;
+  	   box-shadow:  60px 60px rgba(128, 140, 104,1);
+
+
+  	}
+  </style>
+  <body>
+  	<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide" style="background-image:url('images/d.jpg')"></div>
+ <div class="swiper-slide" style="background-image:url('images/dd.jpg')"></div>
+  <div class="swiper-slide" style="background-image:url('images/ddd.jpg')"></div>
+   <div class="swiper-slide" style="background-image:url('images/dddd.jpg')"></div>
+    <div class="swiper-slide" style="background-image:url('images/ddddd.jpg')"></div>
+    
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+	const swiper = new Swiper('.swiper-container', {
+		slidesPerView: 2,
+      centeredSlides: true,
+      spaceBetween: 150,
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    
+  // Optional parameters
+  
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+</script>
+</body>
+</html>

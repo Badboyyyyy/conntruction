@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DKdesigners|One place solution for your all designing content</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <style type="text/css">
+  	@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  
+ 
+  	.bg{
+  		 width: 100%;
+  		 height: 100vh;
+  		 padding: 0;
+  		 margin:0;
+
+  		 background-position: center;
+  		 background-size: cover;
+  		 background-repeat: no-repeat;
+  		 backface-visibility: hidden;
+  		 background-image: linear-gradient(rgba(200,0,100,0.2),rgba(0,0,100,0.2)), url("dklogo3d.jpg");
+  	}
+  	h2{
+  		font-family: lobster;
+  		color: white;
+  		
+  	}
+  	
+  	li{
+  		padding: 8px;
+  		float: right;
+  		list-style: none;
+  		display:inline-block;
+  		color: white;
+  	}
+  	a{
+  		text-decoration: none;
+  		color: #fff;
+  		padding: 10px;
+  	}
+  	.navbar-brand{
+  		 animation: colorchange 4s linear infinite;
+  		 border:2px solid white;
+  		 padding: 5px;
+  		 border-radius: 10px;
+  	}
+  	@keyframes colorchange{
+  		0%{
+
+  		     border-color: #FFA500; 
+  		}
+  		25%{
+  			
+  		     border-color: #008000; 
+  		}
+  		50%{
+  		     border-color: #FFFF00; 
+  		}
+  		100%{
+  		     border-color: #00FF00; 
+  		}
+  	}
+  	
+  	b{
+  		color: yellow;
+  	}
+  	.btn{
+  		background-color: #fff;
+  		position: absolute;
+  		top:65%;
+  		left:40%;
+
+  		width: 250px;
+  	}
+  	a:hover{
+  		     color: white;
+  		     text-decoration: none;
+  		     border-top: 1px solid white;
+  	}
+  	.container{
+  		   text-align: center;
+  	}
+  	.card{ 
+  		    width:60%;
+  		    margin-left: 10%;
+  		    margin-bottom: 3%;
+  		    display: none;
+  	}
+  	.card-title{
+  		         color: red;
+  	}
+     .slider{
+     	       width: 80%;
+     	       height: 30%;
+     	       background-color: white;
+     	       margin: 7%;
+     }
+  	
+  @media only screen and (max-width:768px){
+      .btn{
+            top:65%;
+            
+      }
+  }
+  @media only screen and (max-width:479px){
+      .btn{
+             left:10%
+      }
+      .card{
+              width:80%;
+      }
+      .container-fluid li{
+           display:inline-block;
+           padding:2px;
+    }
+      .container-fluid a{
+          padding:3px;
+      }
+  }
+  	
+
+  </style>
+</head>
+<body>
+	<div class="bg">
+		<header>
+			<div class="navbar navbar-expand-sm navbar-light">
+				<div class="navbar-brand">
+					<h2>DKdesigners</h2>
+				</div>
+		    </div>
+		</header>
+		
+		<button class="btn">Explore</button>
+		<span><i class="fas fa-times-circle" style="color: white; margin-left: 80%; margin-top: -50%; display: none;"></i></span>
+		<div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Logo Designs</h4>
+             <a href="order.php" class="card-text stretched-link" style="color: black">Get your Business logo.</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+              <h4 class="card-title text-primary">Posts Designs</h4>
+             <a href="order.php" class="card-text stretched-link" style="color: black">Get your Promotiona posts.</a>
+             
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+              <h4 class="card-title text-success">Web Development</h4>
+             <a href="order.php" class="card-text stretched-link" style="color: black;">Get your Business website ready.</a>
+            </div>
+        </div>
+        <div class="container bg-light" style="display: none;">
+        	<div>
+        		<h2>Post designs</h2>
+        	</div>
+        </div>
+        <a href="services.html" id="more" class=" font-weight-bolder text-white " style="margin-left: 10%; display: none">Explore More</a>
+		<div class="container-fluid fixed-bottom">
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.php">Contact us</a></li>
+				<li><a href="social.html">Follow us on:</a></li>
+			</ul>
+		</div>
+	</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".btn:first").click(function(){
+			$(".card").show();
+			$("#more").show();
+			$("i").show();
+			$(".btn:first").hide();
+			$(".container-fluid:last").hide();
+		})
+
+		$("i").click(function(){
+			$(".card").hide();
+			$("#more").hide();
+			$("i").hide();
+			$(".btn:first").show();
+			$(".container-fluid:last").show();
+		})
+
+	})
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <title>Dhavish Kakirde Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <head>
+      <style>
+          h2{
+              color: navy;
+              top:30%;
+              position: absolute;
+              margin-left: 10%;
+              font-size: 300%;
+              position:absolute;
+              padding:2px;
+          }
+          h3{
+              color:navy;
+              text-align: center;
+          }
+          b{
+              color:darkorange;
+          }
+          img{
+                width: 40%;
+                 height:30%;
+                 float:right;
+                 margin-right: 10%;
+                 margin-top: 5%;
+          }
+          .btn{
+                margin-top: 25%;
+                margin-left: 10%;
+                color: white;
+                background-color: blue;
+          }
+          .btn:hover{
+              width:20%;
+              background-color: tomato;
+              color: black;
+              text-align: left;
+              
+          }
+          .container{
+                       width:70%;
+                       margin-bottom: 5%;
+                       margin-top: 8%;
+                       box-sizing: border-box;
+                       box-shadow: 1px 1px 1px 1px grey;
+                       display: none;
+          }
+          .container label{
+                  left: 0;
+                  font-weight: bolder;
+                  color: navy;
+          }
+          .skill{
+                     height: 5px;
+                     background-color: green;
+                     width: 90%;
+                     margin-bottom: 5%;
+                    
+          }
+          .container-fluid{
+                              text-align: center;
+                              background-color: orangered;
+                              margin-top: 5%;
+          }
+           .container-fluid img{
+                           width: 5%;
+                           height: 5%;
+                           float: left;
+                           margin-left: 20%;
+                           margin-top: -1%;
+          }
+          h1{
+               font-weight: bolder;
+          }
+          
+          @media only screen and (max-width:768px){
+              h2{
+                  font-size: 100%;
+                  top:15%;
+              }
+          }
+          @media only screen and (min-width:1000px){
+             h2{
+                 top:15%;
+             }
+         }
+         
+         @media only screen and (max-width:480px){
+             h2{
+                 top:5%;
+                 font-size:80%;
+             }
+         }
+         @media only screen and (min-width:769px) and (max-width:1150px){
+             h2{
+                 top:9%;
+                 font-size:200%;
+                 margin-left:5%;
+             }
+         }
+         
+         
+      </style>
+    </head>
+<body>
+    <div class="navbar bg-primary fixed-top">
+      <h3 class="text-light">Portfolio</h3>
+    </div><br>
+    <h2>Hey,<br>
+        I'm <b>Dhavish Kakirde</b><br>
+        Graphic Designer
+    </h2><br>
+    <img src="photo.jpeg">
+    <button class="btn">Show Skills</button><br>
+    <div class="container bg-light">
+        <h3>Skills</h3>
+        <label>Photoshop</label><div class="skill"></div><span></span>
+        <label>Corel Draw</label><div class="skill" style="width: 90%"></div>
+        <label>HTML</label><div class="skill" style="width:85%"></div>
+        <label>CSS</label><div class="skill"></div>
+        <label>JavaScript</label><div class="skill" style="background-color: seagreen; width: 65%;"></div>
+        <label>Bootstrap</label><div class="skill" style="background-color: seagreen; width: 80%;"></div>
+        <label>Angular</label><div class="skill" style="background-color:red; width: 40%;"></div>
+        <label>jQuery</label><div class="skill"></div>
+        <label>Python</label><div class="skill" style="width: 60%; background-color: orange;"></div>
+        <label>Java</label><div class="skill" style="background-color:orange; width: 60%;"></div>
+        <label>php</label><div class="skill" style="width: 55%; background-color: orange;"></div>
+        <label style="float: right;" onmouseover="cursor">Close</label><br>
+    </div>
+    <div class="container-fluid">
+        <h1>About</h1>
+        <p class="text-white font-weight-bolder p-2">I'm <b style="color:black;">Dhavish Kakirde</b>. I'm Persuing Master of computer Application from <b style="color:black">AKS UNIVERSITY</b> Satna.<br>
+        I want to be a Graphic Designer/web developer. I have done my Graduation in Bachelor of Science(Computer Science).<br>
+        I'm working on two projects currently one is my business website and other one is a online learning platfrom.</p>
+
+    </div>
+    <div class="container-fluid bg-success bottom-fixed">
+        <h1>Contact us @</h1>
+          <img src="gmail2.png"><p class="text-white font-weight-bolder text-left" style="font-size: 200%;">dkdesigners98@gmail.com</p><br>
+        <img src="whats.png"><p class="text-white font-weight-bolder text-left" style="font-size: 200%;">+91 8305025575</p><br>
+       
+    </div>
+   
+<script>
+    var a=document.getElementsByClassName("skill").style.width;
+    if (a>60){
+        document.getElementsByTagName("span").write = "Advanced";
+    }
+</script>
+<script>
+    $(document).ready(function(){
+		$(".btn").click(function(){
+            $(".container:first").show();
+        })
+        $("label:last").click(function(){
+            $(".container").hide();
+        })
+        
+
+	})
+</script>
+</body>
+</html>

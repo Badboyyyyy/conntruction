@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DKdesigners|One place solution for your all designing content</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <style type="text/css">
+  	@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  	.bg{
+  		 width: 100%;
+  		 height: 100vh;
+  		 background-position: center;
+  		 background-size: cover;
+  		 background-repeat: no-repeat;
+  		 backface-visibility: hidden;
+  		 background-image: linear-gradient(rgba(0,0,90,0.5),rgba(0,0,90,0.5)), url("servb.jpg");
+  	}
+  	h2{
+  		font-family: lobster;
+  		color: white;
+  		
+  	}
+  	h3{
+  		font-family: lobster;
+  		color: white;
+  		margin-left: 8%;
+  		margin-top: 5%;
+  		font-size: 40px;
+
+  	}
+  	li{
+  		padding: 10px;
+  		float: left;
+      border-bottom: 1px solid white;
+  		list-style: none;
+  		color: white;
+  	}
+  	a{
+  		text-decoration: none;
+  		color: #fff;
+  		padding: 6px;
+  	}
+    h5{
+         font-family:'Shadows Into Light', cursive;
+         color: white;
+         padding: 10px;
+         border-bottom: 2px solid white;
+    }
+    .container{
+                text-align: center;
+                margin-top: 8%;
+    }
+  	.navbar-brand{
+  		 animation: colorchange 4s linear infinite;
+  		 border:2px solid white;
+  		 padding: 5px;
+  		 border-radius: 10px;
+  	}
+    img{
+          margin-left: 90%;
+          margin-top: -13%;
+    }
+  	@keyframes colorchange{
+  		0%{
+
+  		     border-color: #FFA500; 
+  		}
+  		25%{
+  			
+  		     border-color: #008000; 
+  		}
+  		50%{
+  		     border-color: #FFFF00; 
+  		}
+  		100%{
+  		     border-color: #00FF00; 
+  		}
+  	}
+  	ul{
+       padding: 2px;
+    }
+    .container a{
+                   text-decoration: none;
+                   color: white;
+    }
+    .container a:hover{
+                          color: #FFFF00; 
+    }
+    .container-fluid a:hover{
+                          color: #00FF00; 
+                          text-decoration: none;
+    }
+  
+    @media only screen and (min-width:576px){
+      img{
+             position: absolute;
+             margin-top:2%;
+      }
+    }
+    @media only screen and (max-width: 1180px){
+      img{
+        margin-left: 90%;
+      }
+    }
+    
+
+
+  </style>
+</head>
+<body>
+	<div class="bg">
+		<header>
+			<div class="navbar navbar-expand-sm navbar-light">
+				<div class="navbar-brand">
+					<h2>DKdesigners</h2>
+				</div>
+				<img src="icon.png" id="icon" width="40px" height="40px">
+			</div>
+		</header>
+		<div class="container">
+     <h5><a href="order.php">Logo Designs</a></h5>
+     <h5><a href="order.php">Website Designs</a></h5>
+     <h5><a href="order.php">Social MEdia posts</a></h5>
+     <h5><a href="order.php">Digital Marketing</a></h5>
+     <h5><a href="order.php">Business Cards Designs</a></h5>
+     <h5><a href="order.php">Product Packaging Designs</a></h5>
+    </div>
+   <div class="container-fluid" style="display: none; margin-top: 5%">
+    <span><i class="fas fa-times-circle" style="color: white; margin-left: 90%; margin-top: -70%; display: none;"></i></span>
+        <h5><a href="index.html">Home</a></h5>
+        <h5><a href="about.html">About</a></h5>
+        <h5><a href="services.html">Services</a></h5>
+        <h5><a href="contact.php">Contact us</a></h5>
+        <h5><a href="social.html">Follow us on:</a></h5>
+    </div>  
+    </div>
+	</div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $("#icon").click(function(){
+      $(".container").hide();
+      $(".container-fluid").show();
+      $("i").show();
+      })
+    $("i").click(function(){
+      $(".container").show();
+      $(".container-fluid").hide();
+      $("i").hide();
+      })
+  })
+
+  </script>
+</body>
+</html>

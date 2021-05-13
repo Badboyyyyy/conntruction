@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DKdesigners|One place solution for your all designing content</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <style type="text/css">
+  	@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+  	.bg{
+  		 width: 100%;
+  		 height: 100vh;
+  		 padding: 0;
+  		 margin:0;
+  		 background-position: center;
+  		 background-size: cover;
+  		 background-repeat: no-repeat;
+  		 backface-visibility: hidden;
+  		 background-image: linear-gradient(rgba(200,0,100,0.2),rgba(0,0,100,0.2)), url("w1.jpg");
+  	}
+  	h2{
+  		font-family: lobster;
+  		color: white;
+  		
+  	}
+  	h3{
+  		font-family: lobster;
+  		color: white;
+  		margin-left: 10%;
+  		margin-top: 5%;
+  		font-size: 40px;
+
+  	}
+  	
+  	.navbar-brand{
+  		 animation: colorchange 4s linear infinite;
+  		 border:2px solid white;
+  		 padding: 5px;
+  		 border-radius: 10px;
+  		 color:white;
+  	}
+  	.navbar-brand a{
+  	    text-decoration:none;
+  	    color:white;
+  	}
+  	@keyframes colorchange{
+  		0%{
+
+  		     border-color: #FFA500; 
+  		}
+  		25%{
+  			
+  		     border-color: #008000; 
+  		}
+  		50%{
+  		     border-color: #FFFF00; 
+  		}
+  		100%{
+  		     border-color: #00FF00; 
+  		}
+  	}
+  	b{
+  		color: yellow;
+  	}
+  	.cir{
+         width: 100px;
+         height: 100px;
+         border-radius: 50%;
+         border:3px solid white;
+         padding: 15px;
+         margin-left: 45%;
+         margin-top: 5%;
+         transition: 0.1s;
+    }
+    .cir:hover{
+               background-color: rgba(150,150,150,0.4);
+    }
+     .container-fluid li {
+       float:right;
+       list-style-type:none;
+       padding:18px;
+       color:white;
+     }
+     .container-fluid a{
+         color:white;
+     }
+    .container-fluid a:hover{
+             color: white;
+  		     text-decoration: none;
+  		     border-top: 1px solid white;
+    }
+    img{
+        width:60px;
+        height:60px;
+    }
+    @media only screen and (max-width:768px){
+        .cir{
+         width: 150px;
+         height: 150px;
+         border-radius: 50%;
+         border:3px solid white;
+         padding: 15px;
+         margin-left: 42%;
+         margin-top: 8%;
+         transition: 0.1s;
+    }
+    img{
+        width:110px;
+        height:110px;
+    }
+    }
+    @media only screen and (max-width:479px){
+         .cir{
+         width: 60px;
+         height: 60px;
+         border-radius: 50%;
+         border:3px solid white;
+         padding: 9px;
+         margin-left: 42%;
+         margin-top: 8%;
+         transition: 0.1s;
+    }
+    img{
+        width:40px;
+        height:40px;
+    }
+    .container-fluid li{
+           display:inline-block;
+           float:right;
+           padding:5px;
+    }
+    }
+  </style>
+</head>
+<body>
+	<div class="bg">
+		<header>
+			<div class="navbar navbar-expand-sm navbar-light">
+				<div class="navbar-brand">
+					<h2><a href="index.html">DKdesigners</a></h2>
+				</div>
+				
+	</div>
+
+		</header>
+		    <div class="cir">
+          <a href="https://www.facebook.com/dkdesigners98/"><img src="facebook.png"></a>
+        </div>
+        <div class="cir">
+          <a href="https://instagram.com/dk__designers?igshid=jqyojrk5nfke"><img src="insta.png" ></a>
+        </div>
+        <div class="cir">
+          <a href="https://twitter.com/dkdesigners98?s=20"><img src="twit.png" style="border-radius:50%"></a>
+        </div>
+        	<div class="container-fluid fixed-bottom">
+			<ul>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="contact.php">Contact us</a></li>
+			</ul>
+		</div>
+        
+	</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".btn:first").click(function(){
+			$(".card").show();
+			$("#more").show();
+			$("i").show();
+			$(".btn:first").hide();
+			$(".container-fluid:last").hide();
+		})
+
+		$("i").click(function(){
+			$(".card").hide();
+			$("#more").hide();
+			$("i").hide();
+			$(".btn:first").show();
+			$(".container-fluid:last").show();
+		})
+
+	})
+</script>
+</body>
+</html>
